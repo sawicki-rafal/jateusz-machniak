@@ -1,0 +1,12 @@
+{
+  "name": "jateusz-machniak",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "author": "Rafał Sawicki",
+  "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["script.js"],
+    "matches": ["https://www.facebook.com/messages/*","https://www.messenger.com/*"]
+  }],
+  "manifest_version": 2
+}
