@@ -1,12 +1,17 @@
 {
   "name": "jateusz-machniak",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Google Chrome Extension for changing conversation photos and names in Facebook Messenger.",
   "author": "Rafał Sawicki",
   "content_scripts": [{
-    "css": ["style.css"],
     "js": ["script.js"],
     "matches": ["https://www.facebook.com/messages/*","https://www.messenger.com/*"]
   }],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon64.png",
+    "128": "images/icon128.png"
+  },
   "manifest_version": 2
 }
