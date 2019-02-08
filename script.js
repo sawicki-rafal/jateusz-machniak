@@ -14,16 +14,10 @@ function changeContent() {
 
 
     function changeConversationsNames() {
+        const JATEUSZ_NAME = "Jateusz Machniak";
+        let spans = document.querySelectorAll('[id*="row_header_id"] span');
 
-        function changeConversationNamesFor(ariaLabelTag) {
-            const JATEUSZ_NAME = "Jateusz Machniak";
-            let spans = document.querySelectorAll('[aria-label="' + ariaLabelTag + '"] span');
-            Array.prototype.forEach.call(spans,span => span.innerHTML = JATEUSZ_NAME);
-        }
-
-        changeConversationNamesFor("Lista konwersacji");
-        changeConversationNamesFor("Conversation List");
-        changeConversationNamesFor("Liste der Unterhaltungen");
+        Array.prototype.forEach.call(spans, span => span.innerHTML = JATEUSZ_NAME);
     }
 
     setInterval(function () {
